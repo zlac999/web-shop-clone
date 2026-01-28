@@ -1,8 +1,8 @@
-import { productsData } from "./Assets/Mock.js/mock";
-import Footer from "./Footer/Footer";
-import Header from "./Header";
-import Hero from "./Hero";
-import Main from "./Main";
+import { productsData } from "./Components/Mock/mock";
+import Footer from "./Components/Footer";
+import Header from "./Components/Header";
+import Hero from "./Components/Hero";
+import Main from "./Components/Main";
 
 function App() {
   return (

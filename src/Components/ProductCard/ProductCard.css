@@ -1,14 +1,14 @@
-.main {
-  padding: 40px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
 .product-card {
-  padding: 15px;
+  position: relative;
   border: 1px solid #ddd;
   border-radius: 12px;
+  padding: 15px;
+  background: white;
+}
+
+.product-card.out-of-stock {
+  background: #f0f0f0;
+  opacity: 0.8;
 }
 
 .product-img {
@@ -19,19 +19,7 @@
   margin-bottom: 10px;
 }
 
-.add-btn {
-  margin-top: 10px;
-  padding: 10px 14px;
-  border: none;
-  cursor: pointer;
-}
-
-/* da badge može u ćošak */
-.product-card {
-  position: relative;
-}
-
-/* zajednički stil */
+/* badge */
 .badge {
   position: absolute;
   top: 20px;
@@ -39,7 +27,7 @@
   font-size: 12px;
   font-weight: bold;
   color: white;
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
 .badge.new {
@@ -50,4 +38,20 @@
 .badge.sale {
   left: 20px;
   background: red;
+}
+
+/* buttons */
+.add-btn {
+  margin-top: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.out-btn {
+  margin-top: 10px;
+  padding: 10px;
+  background: #999;
+  color: white;
+  border: none;
+  cursor: not-allowed;
 }
