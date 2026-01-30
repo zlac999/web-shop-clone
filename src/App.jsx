@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <Header />
-      <Hero />
+      <Hero img="/Hero.jpg" />
       <Main data={productsData} />
       <Footer />
     </div>

@@ -1,7 +1,6 @@
-import img from "../Assets/Picture/Hero.jpg";
 import "./Hero.css";
 
-function Hero() {
+function Hero({ img }) {
   return (
     <div className="hero">
       <img src={img} alt="Fashion picture" />
